@@ -6,7 +6,7 @@ nav ul li {
     text-align: center;
     /* centre the nav bar */
     margin: auto;
-    margin: 0 10px;
+    margin: 2 2px;
 }
 
 section {
@@ -71,6 +71,9 @@ h1 h2 h3 {
 }
 /* otherwise: */
 @media (max-width: 768px) {
+    .container {
+        margin-top: 10%;
+    }
     .overlay-text {
         min-width: 90%;
         font-size: 22px;

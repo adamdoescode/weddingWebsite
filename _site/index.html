@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adam and Simone's Wedding Website</title>
+    <!-- Add meta tags for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add any additional CSS or external stylesheets here -->
+    <!-- add index.css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- add google lora font here -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <nav>
+        <!-- Add navigation links to different sections of the website -->
+        <ul class="nav nav-tabs fixed-top bg-dark">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#details">Details</a></li>
+            <li class="nav-item"><a class="nav-link" href="#rsvp">RSVP</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="bg-light">
+            <!-- Add a welcome message or introduction to the wedding -->
+            <div class="container">
+                <img class="background-image" src="images/robin.jpg" alt="Background Image">
+                <div class="overlay-text">
+                    <p>
+                        The Wedding of
+                    </p>
+                    <p>
+                        Simone Waite & Adam Graham
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Details" class="bg-white">
+            <h1>Details</h1>
+            <div class="details-container">
+                <p class="smol-p"><i>Date:</i> 9/9/23</p>
+                <p class="smol-p"><i>Ceremony:</i> 11:45am</p>
+                <p class="smol-p"><i>Reception </i>to follow</p>
+                <p class="smol-p"><i>Venue:</i> Dixon Park SSLC</p>
+                <p class="smol-p"><i>Address:</i> <a href="https://www.google.com.au/maps/place//@-32.9448872,151.7582315,17z">20 Ocean St,
+                        Merewether NSW 2291</a></p>
+                <p class="bigger-p text-success">RSVP by <strong>19/8/23</strong></p>
+            </div>
+        </section>
+
+        <section id="rsvp" class="bg-light">
+            <!-- Add an RSVP form or instructions for guests to RSVP -->
+            <h1>RSVP</h1>
+            <!-- add form -->
+            <form action="https://formspree.io/f/mbjebdvw" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" class="form-control" id="guests" placeholder="Enter the number of guests"
+                        name="guests_count">
+                </div>
+                <!-- dietary requirements field -->
+                <div class="form-group">
+                    <label for="guests">Dietary requirements:</label>
+                    <input type="message" class="form-control" id="dietary" placeholder="Note any dietary requirements"
+                        name="dietary" rows="3">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Leave a message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+
+        <section id="gallery" class="bg-white">
+            <!-- Add a photo gallery showcasing wedding-related pictures -->
+            <h1>Gallery</h1>
+            <h3>More photos to come!</h3>
+            <!-- add a gallery photo -->
+            <div class="gallery-container">
+                <img class="gallery-image" src="images/cute_photo.JPG" alt="Gallery Image">
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Add footer content, such as copyright information -->
+    </footer>
+
+    <!-- Add Bootstrap JavaScript (jQuery and Popper.js are required dependencies) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wedding Website</title>
+    <!-- Add meta tags for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, shrink-to-fit=no">
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add any additional CSS or external stylesheets here -->
+    <!-- add index.css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- add google lora font here -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Add the wedding title or logo and any other header content -->
+    </header>
+
+    <nav>
+        <!-- Add navigation links to different sections of the website -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#couple">Our Story</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#rsvp">RSVP</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <!-- Add a welcome message or introduction to the wedding -->
+            <div class="container">
+                <img class="background-image" src="images/robin.jpg" alt="Background Image">
+                <div class="overlay-text">
+                    <p>
+                        The Wedding of
+                    </p>
+                    <p>
+                        Simone & Adam
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="rsvp">
+            <!-- Add an RSVP form or instructions for guests to RSVP -->
+            <h1>RSVP</h1>
+            <!-- add form -->
+            <form action="https://formspree.io/f/mbjebdvw" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" class="form-control" id="guests" placeholder="Enter the number of guests" name="guests_count">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Leave a message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+
+        <section id="gallery">
+            <!-- Add a photo gallery showcasing wedding-related pictures -->
+            <h1>Gallery</h1>
+            <h3>Photos to come!</h3>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Add footer content, such as copyright information -->
+    </footer>
+
+    <!-- Add Bootstrap JavaScript (jQuery and Popper.js are required dependencies) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

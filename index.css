@@ -1,0 +1,67 @@
+
+nav ul li {
+    font-size: 20;
+    color: black;
+    /* centre content */
+    text-align: center;
+    /* centre the nav bar */
+    margin: auto;
+    margin: 0 10px;
+}
+
+section {
+    font-size: 20;
+    color: black;
+    text-align: center;
+    padding: 5%;
+    /* border: 2px solid rgb(45, 136, 255); */
+}
+
+h1 h2 {
+    /* lora font */
+    font-family: "Lora", serif;
+}
+.overlay-text {
+    font-family: "Lora", serif;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 208, 216);
+    font-size: 26px;
+    font-weight: bold;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    /* rounded corners */
+    border-radius: 10px;
+}
+/* overlay text on a desktop browser */
+@media (min-width: 768px) {
+    .overlay-text {
+        font-size: 40px;
+    }
+}
+/* otherwise: */
+@media (max-width: 768px) {
+    .overlay-text {
+        font-size: 22px;
+    }
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}

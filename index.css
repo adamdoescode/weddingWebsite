@@ -10,6 +10,7 @@ nav ul li {
 }
 
 section {
+    font-family: "Lora", serif;
     font-size: 20;
     color: black;
     text-align: center;
@@ -17,7 +18,7 @@ section {
     /* border: 2px solid rgb(45, 136, 255); */
 }
 
-h1 h2 {
+h1 h2 h3 {
     /* lora font */
     font-family: "Lora", serif;
 }
@@ -25,16 +26,33 @@ h1 h2 {
     font-family: "Lora", serif;
 }
 
+.smol-p {
+    /* open sans font */
+    font-family: "Oswald", sans-serif;
+    /* font size 16 */
+    font-size: 20px;
+}
+
+.bigger-p {
+    font-size: 26px;
+}
+
+.form-group {
+    /* open sans font */
+    font-family: "Oswald", sans-serif;
+}
+
+.details-container {
+    padding: 5%;
+}
+
 .overlay-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(255, 208, 216);
-    font-size: 26px;
+    color: rgb(225, 239, 250);
     font-weight: bold;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 12, 35, 0.5);
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 4%;
@@ -46,16 +64,27 @@ h1 h2 {
 @media (min-width: 768px) {
     .overlay-text {
         font-size: 40px;
+        min-width: 70%;
+        top: 25%;
+        left: 50%;
     }
 }
 /* otherwise: */
 @media (max-width: 768px) {
     .overlay-text {
+        min-width: 90%;
         font-size: 22px;
+        top: 50%;
+        left: 50%;
     }
 }
 
 .background-image {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+.gallery-image {
     width: 100%;
     height: auto;
     z-index: 1;
